@@ -1,43 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:description" content="روبدوشامبر های تک دوز و خاص" />
+    <meta name="description" content="روبدوشامبر های تک دوز و خاص" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+      name="keywords"
+      content="robomoshop,لباس خواب ساتن,لباس خواب,روبدوشامبر,خرید روبدوشامبر"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>RobomoShop</title>
+    <link
+      href="/assets/font/fav_icon/fav_icon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/slider.css" />
+
+    <link rel="stylesheet" href="/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="/assets/css/media-queries.css" />
+    <meta
+      name="google-site-verification"
+      content="J16a5z3shsa0ZQjn5HtQhPUpv7h1I-GnYOVMKxE154Q"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5JPGC74DMY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5JPGC74DMY");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NF629F6");
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header id="header">
+      <section class="header-top">
+        <section class="header-top-left">
+          <h1>
+            <a href="/"> RobomoShop </a>
+          </h1>
+        </section>
+        <section class="header-top-right">
+          <p class="close-icon-con">
+            <i class="fa fa-times menu-close-icon"></i>
+          </p>
+          <p>
+            <a href="/">خانه</a>
+          </p>
+          <p>
+            <a href="/about-us#aboutUs">درباره ما</a>
+          </p>
+          <p>
+            <a href="#footer">تماس با ما</a>
+          </p>
+          <p>
+            <a href="/article#article">مقالات</a>
+          </p>
+        </section>
+
+        <section class="menu">
+          <i class="fas fa-bars menu-icon"></i>
+        </section>
+      </section>
+
+      <section class="slider">
+        <div class="slider-item">
+          <div class="item active">
+            <div
+              class="img"
+              style="
+                background-image: url('/assets/images/cover/new-H1.jpg');
+              "
+              id="slide1"
+            ></div>
+          </div>
+          <div class="item">
+            <div
+              class="img"
+              style="background-image: url('/assets/images/cover/H2.jpg')"
+            ></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="next"><i class="fas fa-chevron-right"></i></div>
+          <div class="prev"><i class="fas fa-chevron-left"></i></div>
+        </div>
+
+        <div class="progress"></div>
+      </section>
+    </header>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <footer id="footer">
+      <section class="footer-top">
+        <p class="rtl footer-top-title">
+          تیم روبومو ارائه ی مشاوره ی تخصصی در راستای انتخاب درست محصول را از
+          وظایف خود می داند لذا در طول هفته از طریق اینستاگرام، واتساپ و ایمیل
+          پاسخگوی سوالات شما عزیزان هستیم.
+        </p>
+        <div class="icons">
+          <a
+            class="icon-con"
+            href="https://instagram.com/robomoshop"
+            target="blank"
+          >
+            <i class="fab fa-instagram icon"></i>
+            <p>@robomoshop</p>
+          </a>
+          <a class="icon-con" href="mailto:robomoshop@gmail.com" target="blank">
+            <i class="fas fa-envelope icon"></i>
+            <p>robomoshop@gmail.com</p>
+          </a>
+          <a class="icon-con" href="https://wa.me/989364230676" target="blank">
+            <i class="fab fa-whatsapp icon" style="font-size: 20px"></i>
+            <p style="font-size: 20px">+936 423 0676</p>
+          </a>
+          <a class="icon-con" href="https://wa.me/989108899070" target="blank">
+            <i class="fab fa-whatsapp icon" style="font-size: 20px"></i>
+            <p style="font-size: 20px">+910 889 9070</p>
+          </a>
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <a href="#header" class="anime"> RobomoShop </a>
+      </section>
+    </footer>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/all.min.js"></script>
+    <script src="/assets/js/sldiebar.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

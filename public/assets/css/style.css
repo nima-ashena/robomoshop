@@ -1,0 +1,588 @@
+@import "font.css";
+
+* {
+  padding: 0;
+
+  margin: 0;
+
+  box-sizing: border-box;
+
+  list-style: none;
+
+  text-decoration: none;
+
+  box-shadow: none !important;
+
+  transition: 0.4s;
+}
+
+body {
+  margin: 0;
+
+  padding: 0;
+}
+
+header {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+
+  color: rgb(75, 75, 75);
+}
+
+h2,
+p,
+ul,
+li {
+  font-family: Shabnam, "Shams", tahoma !important;
+
+  color: rgb(75, 75, 75);
+}
+
+p,
+ul,
+li {
+  font-size: 19px;
+}
+
+h2 {
+  font-size: 20px;
+
+  font-weight: 900;
+}
+
+p {
+  text-align: justify;
+}
+
+h2,
+h3,
+h1 {
+  color: rgb(75, 75, 75);
+}
+
+.img-hover {
+  transition: 0.6s;
+}
+
+.img-hover:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.slide {
+  width: 100%;
+
+  height: 600px;
+
+  background-size: cover;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background-attachment: fixed;
+}
+
+.swiper-con {
+  display: none;
+
+  width: 90%;
+
+  position: relative;
+
+  margin: 20px auto;
+}
+
+.swiper-img {
+  width: 100% !important;
+
+  height: 800px !important;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+}
+
+/*********/
+
+.header-top {
+  height: 60px;
+
+  display: grid;
+
+  grid-template-columns: auto auto;
+}
+
+.header-top-right {
+  display: flex;
+
+  flex-direction: row-reverse;
+
+  align-items: center;
+
+  padding: 15px 0;
+}
+
+.header-top-left {
+  padding: 15px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.header-top-left h1 a {
+  color: rgb(75, 75, 75);
+
+  font-size: 22px;
+
+  font-family: "Glass Antiqua";
+
+  transition: 0.5s;
+}
+
+.header-top-left h1 a:hover {
+  font-size: 25px;
+
+  color: #f8919d;
+
+  cursor: pointer;
+
+  text-shadow: #4eabe9 1px 0 10px;
+}
+
+.header-top-right p {
+  margin-left: 30px;
+}
+
+.header-top-right p a {
+  color: rgb(75, 75, 75);
+
+  font-size: 18px;
+
+  transition: 0.5s;
+}
+
+.header-top-right p a:hover {
+  font-size: 20px;
+
+  color: #f8919d;
+
+  cursor: pointer;
+
+  text-shadow: #4eabe9 1px 0 10px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 26px;
+
+  transition: 0.4s;
+}
+
+.menu-icon:hover {
+  color: #f8919d;
+
+  cursor: pointer;
+
+  box-shadow: #4eabe9 1px 0 10px;
+
+  font-size: 30px;
+}
+
+.menu-close-icon {
+  display: none;
+
+  color: #fff;
+
+  font-size: 20px;
+}
+
+.close-icon-con:hover {
+  color: rgb(148, 5, 5);
+
+  cursor: pointer;
+}
+
+.L2 {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.L2-contain {
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.L2-column2 {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.L2-column2-row1 {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.L2-column2-row2 {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.L2-bigImg {
+  width: 560px;
+
+  height: 760px;
+
+  margin: 9px;
+}
+
+.L2-img {
+  width: 280px;
+
+  height: 372px;
+
+  margin: 7px;
+}
+
+.L2-text {
+  direction: rtl;
+
+  width: 1100px;
+
+  margin-bottom: 40px;
+}
+
+.L2-text h2 {
+  font-family: "Shams" cursive;
+
+  margin-bottom: 10px;
+}
+
+.L2-text p {
+  margin-bottom: 10px;
+}
+
+.L2-text ul li {
+  margin-bottom: 8px;
+}
+
+.slide3 {
+  background-image: url("../images/H3.jpg");
+}
+
+.L3-img {
+  width: 350px;
+
+  margin: 8px;
+}
+
+.L3-text {
+  direction: rtl;
+
+  width: 80%;
+
+  margin-bottom: 40px;
+}
+
+.L3-text h2 {
+  font-family: "Shams" cursive;
+
+  margin-bottom: 10px;
+}
+
+.L3-text p {
+  margin-bottom: 10px;
+
+  font-weight: 400;
+}
+
+.L4-bigImg {
+  width: 560px;
+
+  height: 650px;
+
+  margin: 9px;
+}
+
+.L4-img {
+  width: 280px;
+
+  height: 390px;
+
+  margin: 7px;
+}
+
+.L4-text {
+  margin-top: 27px;
+
+  direction: rtl;
+}
+
+.L4-column2-row2 {
+  width: 560px;
+}
+
+.L4-bigImg {
+  width: 500px;
+}
+
+.L4-text h2 {
+  margin-bottom: 20px;
+}
+
+.slide4 {
+  background-image: url("../images/H4.jpg");
+}
+
+.slide5 {
+  background-image: url("../images/H2.jpg");
+
+  margin-bottom: 40px;
+}
+
+.L5 {
+  /*padding: 80px;*/
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.L5-contain {
+  display: flex;
+
+  flex-direction: column;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 25px;
+}
+
+.L5-row1 {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.L5-row2 {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.L5-row1-column2 {
+  width: 560px;
+
+  padding: 20px;
+}
+
+.L5-row1-column2 h2 {
+  margin-bottom: 12px;
+}
+
+.L5-row2-column1 {
+  width: 560px;
+
+  padding: 20px;
+}
+
+.L5-row2-column1 h2 {
+  margin-bottom: 12px;
+}
+
+.L5-img {
+  width: 260px;
+
+  height: 372px;
+
+  margin: 7px;
+}
+
+.L5-text {
+  /*padding: 15px;*/
+
+  direction: rtl;
+}
+
+.L5-text h2 {
+  font-family: "Shams" cursive;
+
+  margin-bottom: 10px;
+}
+
+.L5-text p {
+  font-size: 17px;
+
+  margin-bottom: 10px;
+}
+
+/***********/
+
+.footer-top {
+  padding: 15px;
+
+  width: 100%;
+
+  /*height: 300px;*/
+
+  background-color: #434343;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.footer-top-title {
+  margin: 50px 0 50px 0;
+
+  color: #fff;
+
+  text-align: center;
+}
+
+.icons p {
+  color: #fff;
+
+  font-size: 16px;
+}
+
+.icon-con {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 6px;
+}
+
+.icon {
+  color: #fff;
+
+  margin-right: 10px;
+
+  margin-top: 3px;
+
+  font-size: 24px;
+}
+
+.footer-bottom {
+  width: 100%;
+
+  height: 50px;
+
+  background-color: #5b5555;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+.anime {
+  color: white;
+
+  font-size: 25px;
+
+  font-family: "Gabrbera", cursive;
+
+  animation-name: robomo-anime;
+
+  animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes robomo-anime {
+  0% {
+    color: #f7b2ba;
+  }
+
+  50% {
+    color: white;
+
+    text-shadow: #4eabe9 1px 0 10px;
+  }
+
+  100% {
+    color: #f7b2ba;
+  }
+}
+
+.footer-bottom a:hover {
+  color: #f8919d;
+
+  font-family: "Gabrbera", cursive;
+
+  text-shadow: #4eabe9 1px 0 10px;
+}
